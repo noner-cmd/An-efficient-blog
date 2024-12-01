@@ -1,0 +1,169 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #DFE5F0;
+            color: #394E6A;
+            padding-top: 60px; /* 增加这个样式，使页面整体下移60px */
+            font-weight: bold;
+        }
+
+        /* 顶部导航栏 */
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        /* 汉堡菜单和叉叉按钮 */
+        #hamburger {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #hamburger.open i {
+            content: "\f00d"; /* 设置为叉叉图标 */
+        }
+
+        /* 侧边栏 */
+        #sidebar {
+            width: 250px;
+            position: fixed;
+            top: 60px; /* 侧边栏下移60px */
+            left: -250px;
+            height: calc(100% - 60px); /* 高度调整，避免覆盖导航栏 */
+            background-color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        /* 侧边栏打开时 */
+        #sidebar.open {
+            left: 0;
+        }
+
+        /* 侧边栏中的链接 */
+        #sidebar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #394E6A;
+            font-weight: bold;
+        }
+
+        #sidebar a:hover {
+            background-color: #f0f0f0;
+        }
+
+        header h1 {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* Weather icon style */
+        #weather {
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 30px; /* 确保与右侧有适当间距 */
+        }
+
+        /* 侧边栏关闭按钮 */
+        #sidebar-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: #394E6A;
+            cursor: pointer;
+        }
+
+        /* 侧边栏打开时 */
+        #sidebar.open {
+            left: 0;
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #394E6A;
+            font-weight: bold;
+        }
+
+        #sidebar a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* 容器样式 */
+        .container {
+            margin: 15px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-sizing: border-box;
+            margin-top: 15px; /* 为了给导航栏留空间 */
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .icons a {
+            font-size: 30px;
+            color: #394E6A;
+            text-decoration: none;
+        }
+
+/* 页尾容器 */
+.footer-content {
+    font-size: 20px; /* 调大字体大小 */
+    text-align: center; /* 居中对齐 */
+}
+        /* 样式调整 */
+        .btn {
+            margin-top: 20px;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: #394E6A;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2e3a51;
+        }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发布博客</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box; /* 添加这个属性以确保padding不会增加宽度 */
+    }
+
+    textarea {
+      resize: vertical; /* 允许垂直调整大小 */
+    }
+
+    input[type="submit"] {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #4cae4c;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>发布新博客</h1>
+
+    <form action="write.php" method="POST">
+      <label for="title">标题：</label>
+      <input type="text" id="title" name="title" required><br>
+
+      <label for="content">内容：</label>
+      <textarea id="content" name="content" rows="10" cols="50" required></textarea><br>
+
+      <label for="password">发布密码：</label>
+      <input type="password" id="password" name="password" required><br>
+
+      <input type="submit" value="发布博客">
+    </form>
+
+    <!-- 错误消息容器 -->
+    <div class="error-message" id="error-message"></div>
+  </div>
+
+</body>
+</html>
