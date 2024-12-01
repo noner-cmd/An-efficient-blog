@@ -120,6 +120,6 @@ if (file_exists($file)) {
       }
 
       calculateRunningDays();
-
+  </script>
 </body>
 </html>
