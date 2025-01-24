@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #DFE5F0;
+  color: #394E6A;
+  padding-top: 60px; /* 页面整体下移60px */
+  font-weight: bold;
+}
+
+/* 顶部导航栏 */
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+
+
+header h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+
+        header h1 {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+
+
+/* 布局样式 */
+.layout {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  overflow-x: hidden;  /*禁止横向滚动 */ 
+}
+
+/* 左侧固定 */
+.left {
+  position: fixed; /* 固定在页面左侧 */
+  top: 60px; /* 导航栏下方 */
+  left: 0;
+  width: calc(33% + 10px); /* 左侧固定宽度 */
+  height: calc(100% - 60px); /* 高度为剩余空间 */
+  background-color: #DFE5F0;; /* 可以自定义左侧的背景色 */
+  overflow-y: auto; /* 如果内容超出时可以垂直滚动 */
+}
+
+/* 右侧内容区域 */
+.right {
+  position: fixed; /* 固定在页面左侧 */
+  top: 60px; /* 导航栏下方 */
+  margin-left: calc(33% - 20px); /* 右侧留出左侧宽度 */
+  width: 66%; /* 左侧固定宽度 */
+  height: calc(100% - 60px); /* 高度为剩余空间 */
+  background-color: #DFE5F0;; /* 可以自定义左侧的背景色 */
+  overflow-y: auto; /* 如果内容超出时可以垂直滚动 */
+}
+
+/* 容器样式 */
+.container {
+  margin: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 15px; /* 为了给导航栏留空间 */
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 支持 Markdown 格式的文本样式 */
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 20px 0;
+  color: #394E6A;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+/* 无序列表 */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* 有序列表 */
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+/* 链接 */
+a {
+  color: #394E6A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 加粗 */
+strong, b {
+  font-weight: bold;
+}
+
+/* 斜体 */
+em, i {
+  font-style: italic;
+}
+
+/* 删除线 */
+del {
+  text-decoration: line-through;
+}
+
+/* 代码块 */
+pre, code {
+  font-family: Consolas, monospace;
+  background-color: #f4f4f4;
+  border-radius: 0px;
+  padding: 5px;
+}
+
+/* 行内代码 */
+code {
+  padding: 0px 0px;
+  background-color: #e0e0e0;
+  border-radius: 0px;
+}
+
+/* 块引用 */
+blockquote {
+  border-left: 4px solid #394E6A;
+  padding-left: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* 表格 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #394E6A;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* 水平线 */
+hr {
+  border: 0;
+  border-top: 2px solid #394E6A;
+  margin: 20px 0;
+} 
+
+/* 页尾容器 */
+.footer-content {
+  font-size: 20px; /* 调大字体大小 */
+  text-align: center; /* 居中对齐 */
+}
