@@ -286,14 +286,6 @@ td {
             textarea.selectionEnd = before.length + start.length;
         }
     </script>
-        <!-- 百度统计代码-->
-        <script>
-            var _hmt = _hmt || []; (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?98c311339dd7326a9534b96bd3db1764";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
+
 
 </html>
