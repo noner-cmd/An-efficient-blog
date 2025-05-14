@@ -1,4 +1,6 @@
-# 此项目永久停止更新，新版本更新将在https://github.com/noner-cmd/Triangle-blog进行
+# 此项目永久停止更新，新版本更新将在https://github.com/noner-cmd/Triangle-blog/
+
+进行
 
 # Read Me
 
